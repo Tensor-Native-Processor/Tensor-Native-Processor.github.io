@@ -1,6 +1,9 @@
 ### Title
 Accelerate tensor operations via tensor native processor
 
+### Writeups
+- [Proposal](https://docs.google.com/document/d/1GAfvta7s7tb5WmTJ8aKzAe3ObpNLCMyh7144LRcSc-4/edit?usp=sharing)
+
 ### URL
 https://tensor-native-processor.github.io/
 
