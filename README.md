@@ -42,3 +42,18 @@ This problem has the following challenges:
 ### Platform Choice
 - We will use C++ to program the compiler and simulator. C++ is used because we need to measure the performance from a large amount of data, and use Linux syscalls to exchange data across different components.
 - We will use Synopsys VCS to simulate hardware descriptions. VCS is used because we want an accurate simulation result to make sure that the hardware works correctly, so the C++ simulator returns a valid estimation of time consumed.
+
+### Schedule
+Week
+- 11/14: Instruction format; hardware description for matrix/vector cores; simulator
+- 11/21: Simulator; compiler
+- 11/28: Compiler; performance analyses of various work assignment strategies
+- 11/30: Milestone Report
+- 12/5: Performance analyses; stretch goals
+- 12/12: Buffer; stretch goals
+- 12/17: Final Report
+- 12/18: Poster Session
+
+
+
+
