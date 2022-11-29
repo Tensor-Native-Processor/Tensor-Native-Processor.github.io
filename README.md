@@ -92,6 +92,7 @@ We are on schedule and believe we will be able to produce all “plan to achieve
 - u-16m1-16v1 means uniform with one 16*16 matrix core and one 16 vector core.
 - ADD(v16, v16) means performing addition of two 16 vectors.
 - MULT(m16, m16) means performing matrix multiplication on two 16*16 matrices.
+
 | Operations | Simulated Clock Cycles | 
 | --- | --- |
 | ADD(v16, v16) | 11 |
