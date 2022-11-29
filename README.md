@@ -1,8 +1,14 @@
+#### Latest News
+- Added a Milestone Report section at the end and a doc link.
+
+## Proposal
+
 ### Title
 Accelerate tensor operations via tensor native processor
 
 ### Writeups
 - [Proposal](https://docs.google.com/document/d/1GAfvta7s7tb5WmTJ8aKzAe3ObpNLCMyh7144LRcSc-4/edit?usp=sharing)
+- [Milestone](https://docs.google.com/document/d/1S9uN_4u6gEOx_gsh3QaXdEPnmNLhDuLpVdZk-qOXR5U/edit?usp=sharing)
 
 ### URL
 https://tensor-native-processor.github.io/
@@ -56,6 +62,47 @@ Week
 - 12/12: Buffer; stretch goals
 - 12/17: Final Report
 - 12/18: Poster Session
+
+## Milestone Report
+### Schedule
+<img width="814" alt="Screen Shot 2022-11-29 at 5 04 20 PM" src="https://user-images.githubusercontent.com/30998659/204658378-dc6b277c-24c5-4ef5-a146-fa91c838ebb1.png">
+
+### Summarization of work completed so far
+We have written a native tensor processor in Verilog, a simulator that returns the number of cycles performed given a compiled program, and some sample programs performing operations on a single core.
+
+### How we are doing with respect to the goals and deliverables stated in our proposal
+We are on schedule and believe we will be able to produce all “plan to achieve” deliverables. We should be able to produce a portion of “hope to achieve” deliverables by targeting the inference of a simple neural network (only involving Gemm and ReLU).
+
+### Things we plan to show at the poster session
+- ACHIEVED
+  - Architecture and instruction diagrams of our tensor native processor.
+- PLAN TO ACHIEVE
+  - A table showing performance analyses of matrix multiplication
+    - single core
+    - multi-core
+      - different compiler/work assignment strategies
+- HOPE TO ACHIEVE
+  - A table showing performance analyses of simple neural network inference
+    - single core
+    - multi-core 
+      - different compiler/work assignment strategies
+
+### Preliminary results
+- Simulation results on u-16m1-16v1 hardware.
+- u-16m1-16v1 means uniform with one 16*16 matrix core and one 16 vector core.
+- ADD(v16, v16) means performing addition of two 16 vectors.
+- MULT(m16, m16) means performing matrix multiplication on two 16*16 matrices.
+| Operations | Simulated Clock Cycles | 
+| --- | --- |
+| ADD(v16, v16) | 11 |
+| MULT(m16, m16) | 122 |
+
+### Concerning issues
+- High degree of freedom in performance analyses. How to select these values to present interesting findings?
+  - Varying the hardware cache size and matrix/vector core width
+  - Different work assignment strategies in the compiler
+    - When to store data into the registers and which register should it store?
+- Potential deadlock in interconnect. Need to be careful with the compiler implementation. 
 
 
 
