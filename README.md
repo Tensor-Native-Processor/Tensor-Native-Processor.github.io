@@ -1,7 +1,6 @@
 #### Latest News
+- Added Final Report! :D
 - Added a Milestone Report section at the end and a doc link.
-
-## Proposal
 
 ### Title
 Accelerate tensor operations via tensor native processor
@@ -9,6 +8,7 @@ Accelerate tensor operations via tensor native processor
 ### Writeups
 - [Proposal](https://docs.google.com/document/d/1GAfvta7s7tb5WmTJ8aKzAe3ObpNLCMyh7144LRcSc-4/edit?usp=sharing)
 - [Milestone](https://docs.google.com/document/d/1S9uN_4u6gEOx_gsh3QaXdEPnmNLhDuLpVdZk-qOXR5U/edit?usp=sharing)
+- [Final Report](https://docs.google.com/document/d/1-ia2tHcFmrJQFE34cbWFcKN0QsUmywVmUUCn9ExWGZw/edit?usp=sharing)
 
 ### URL
 https://tensor-native-processor.github.io/
